@@ -4,7 +4,8 @@ const connectDb=(URI)=>{
 
         mongoose.connect(URI, {
             useNewUrlParser: true,  
-            useUnifiedTopology: true 
+            useUnifiedTopology: true, 
+             
         }, err => { 
             if(err) throw err;
             console.log('Connected to mongodb...')
